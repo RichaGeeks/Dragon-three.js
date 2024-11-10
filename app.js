@@ -12,22 +12,22 @@ const camera = new THREE.PerspectiveCamera(
 camera.position.z = 1;
 //camera.position.y = 200;
 const scene = new THREE.Scene();
-let bird;
+let dragon;
 
 //when blender is loaded using GLTF its animation is directly loaded in mixer 
 let mixer;
 
 
-// loading blender in bird variable using gltf loader
+// loading blender in dragon variable using gltf loader
 const loader = new GLTFLoader();
 loader.load('shadow_dragon.glb',
     function (gltf) {
-        bird = gltf.scene;
-        scene.add(bird);
-        bird.scale.set(20, 20, 20); // Adjust as        
+        dragon = gltf.scene;
+        scene.add(dragon);
+        dragon.scale.set(20, 20, 20); // Adjust as        
         
         //using mixer animation 
-        mixer = new THREE.AnimationMixer(bird);
+        mixer = new THREE.AnimationMixer(dragon);
         mixer.clipAction(gltf.animations[3]).play();
         modelMove();
        
@@ -120,21 +120,21 @@ const modelMove = () => {
     );
     if (position_active >= 0) {
         let new_coordinates = arrPositionModel[position_active];
-        gsap.to(bird.position, {
+        gsap.to(dragon.position, {
             x: new_coordinates.position.x,
             y: new_coordinates.position.y,
             z: new_coordinates.position.z,
             duration: 1,
             ease: "power1.out"
         });
-        gsap.to(bird.rotation, {
+        gsap.to(dragon.rotation, {
             x: new_coordinates.rotation.x,
             y: new_coordinates.rotation.y,
             z: new_coordinates.rotation.z,
             duration: 1,
             ease: "power1.out"
         });
-        gsap.to(bird.scale, {
+        gsap.to(dragon.scale, {
             x: new_coordinates.scale.x,
             y: new_coordinates.scale.y,
             z: new_coordinates.scale.z,
@@ -153,7 +153,7 @@ const modelMove = () => {
 }
 
 window.addEventListener('scroll', () => {
-    if (bird) {
+    if (dragon) {
         modelMove();
     }
 })
@@ -166,9 +166,9 @@ window.addEventListener('resize', () => {
     camera.updateProjectionMatrix();
 
     //since blender was not resizing as i added a particular scale above i added this function extra 
-    if (bird) {
+    if (dragon) {
         const scaleFactor = Math.min(window.innerWidth / 1200, 1); // Use 1200 or another suitable base width
-        bird.scale.set(20 * scaleFactor, 20 * scaleFactor, 20 * scaleFactor);
+        dragon.scale.set(20 * scaleFactor, 20 * scaleFactor, 20 * scaleFactor);
     }
 })
 
