@@ -1,6 +1,6 @@
 <h3>🐉 3D Dragon Animation with Three.js </h3>
 Welcome to my interactive 3D Dragon website! Built using Three.js, GLTFLoader, GSAP, and OrbitControls, this project features a fully animated 3D dragon model that responds dynamically to scroll events. Whether you're here for the fire-breathing aesthetics or the code wizardry—this one's for you.
-
+<br>
 🌐 Live Demo: [Check it out on Netlify](https://dragon-threejs-richa.netlify.app/)
 
 📸 Preview
@@ -26,53 +26,36 @@ Welcome to my interactive 3D Dragon website! Built using Three.js, GLTFLoader, G
 🧙 Mythical dragon lore and custom content across multiple sections.
 
 🚀 Tech Stack
-Three.js – 3D rendering engine
-
+**Three.js – 3D rendering engine
 GLTFLoader – For loading .glb dragon model
-
 GSAP – Animation library
-
 OrbitControls – Mouse-based camera control
-
-HTML5, CSS3, JavaScript (ES6 Modules)
-
+HTML5, CSS3, JavaScript (ES6 Modules)**
+<br>
 🎯 Deployed with Netlify
-
-🗂️ File Structure
-graphql
-Copy
-Edit
-📁 project-root
-├── 📄 index.html           # Main HTML page with sections
-├── 📄 app.js               # Main Three.js script and scroll animations
-├── 📄 aboutme.js           # A about me page for introduction
-├── 📄 style.css            # Page styling
-├── 🐉 shadow_dragon.glb    # 3D model file (add to public or served folder)
-└── 📁 img/                 # Decorative images like leaves and flowers
-
+<br>
 🛠️ Setup Instructions
-Clone this repo:
+<br>
+Clone this repo: <br>
+git clone my repository <br>
+cd 3d-dragon-threejs <br>
+Run Locally: npx serve <br>
+or if using VS Code, install Live Server extension and click "Go Live". <br>
 
-git clone my repository
-cd 3d-dragon-threejs
-Run Locally:
-npx serve 
-or if using VS Code, install Live Server extension and click "Go Live".
-
-Host on Netlify:
+Host on Netlify: <br>
 Drag & drop your folder on Netlify Drop or connect it to your GitHub repo.
-
-📏 Responsive Design
-This project listens to window resize events and adapts:
-Dragon scale recalculated based on viewport width.
-Camera aspect ratio and renderer dimensions are updated accordingly.
-
-🧠 Learnings & Intent
+<br>
+📏 Responsive Design  <br>
+This project listens to window resize events and adapts: <br>
+Dragon scale recalculated based on viewport width. <br>
+Camera aspect ratio and renderer dimensions are updated accordingly. <br>
+<br>
+🧠 Learnings & Intent <br>
 “Why a dragon?” Because dragons are the perfect blend of mythical storytelling and technical 3D challenge. I wanted to push the boundary of what’s possible with lightweight Three.js projects and make it scroll-aware. Each section gives the dragon a new pose or vibe. This was built as a fun and fierce frontend experiment!
-
-🙋‍♀️ About Me
-Made with love by Richa Ravindra Suryawanshi
-📧 richa.rs@gmail.com
-📱 +91 9082771101
-📸 Instagram: richaaaa.s
-🔗 LinkedIn: richasuryawanshi
+<br>
+🙋‍♀️ About Me <br>
+Made with love by Richa Ravindra Suryawanshi <br>
+📧 richa.rs@gmail.com<br>
+📱 +91 9082771101 <br>
+📸 Instagram: richaaaa.s <br>
+🔗 LinkedIn: richasuryawanshi <br>
