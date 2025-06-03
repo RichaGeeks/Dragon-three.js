@@ -3,7 +3,7 @@ Welcome to my interactive 3D Dragon website! Built using Three.js, GLTFLoader, G
 <br> <br>
 🌐 Live Demo: [Check it out on Netlify](https://dragon-threejs-richa.netlify.app/)
 <br><br>
-📸 Preview <br>
+📸 Preview<br>
 
 ![image](https://github.com/user-attachments/assets/28db6c3e-d1d5-4eea-b4a3-8faca250a779)
 ![image](https://github.com/user-attachments/assets/cc395927-94e4-4a96-85a8-6f9024be2562)
@@ -43,7 +43,7 @@ Clone this repo: <br>
 git clone my repository <br>
 cd 3d-dragon-threejs <br>
 Run Locally: npx serve <br>
-or if using VS Code, install Live Server extension and click "Go Live". 
+or if using VS Code, install Live Server extension and click "Go Live"
 <br>
 <br>
 Host on Netlify: <br>
