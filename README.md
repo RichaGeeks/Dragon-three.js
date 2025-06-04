@@ -29,7 +29,6 @@ Welcome to my interactive 3D Dragon website! Built using Three.js, GLTFLoader, G
 🚀 Tech Stack <br>
 **Three.js – 3D rendering engine <br>
 GLTFLoader – For loading .glb dragon model <br>
-GSAP – Animation library <br>
 OrbitControls – Mouse-based camera control <br>
 HTML5, CSS3, JavaScript (ES6 Modules)** <br>
 <br> 
